@@ -1,0 +1,104 @@
+html
+  height: 100%
+
+body
+  font: 14px Arial, Helvetica, sans-serif
+  color: #393939
+  margin: 0
+  padding: 0
+  height: 100%
+  background-color: white
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.flexbody
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.container
+  margin: 0 auto
+  width: 1180px
+
+  &::after
+    clear: both
+    float: none
+    font-size: 0
+    height: 0
+    line-height: 0
+    margin: 0
+    padding: 0
+    content: "."
+    visibility: hidden
+    overflow: hidden
+    display: block
+
+a
+  color: $a_color
+  text-decoration: none
+  transition: 0.2s
+  &:focus,&:hover
+    color: lighten($a_color, 8%)
+
+b
+  font-weight: bold
+
+.inp_base
+  border-radius: 0px
+  padding: 13px 20px
+  border: none
+  border: 1px solid #d4d4d4
+  margin: 0 auto
+  display: inline-block
+  vertical-align: top
+  font-size: 16px
+  box-sizing: border-box
+  &:focus,&:hover
+    outline: none
+    border-color: $a_color
+
+.button_base
+  border-radius: 0px
+  color: white
+  font-size: 18px
+  font-weight: bold
+  padding: 15px 25px
+  text-align: center
+  text-decoration: none
+  display: inline-block
+  box-sizing: border-box
+  border: none
+  cursor: pointer
+  &:focus,&:hover
+    outline: none
+
+.mtop10
+  margin-top: 10px !important
+.mtop20
+  margin-top: 20px !important
+.mtop30
+  margin-top: 30px !important
+.mtop40
+  margin-top: 40px !important
+.mtop50
+  margin-top: 50px !important
+
+.mbot10
+  margin-bottom: 10px !important
+.mbot20
+  margin-bottom: 20px !important
+.mbot30
+  margin-bottom: 30px !important
+.mbot40
+  margin-bottom: 40px !important
+.mbot50
+  margin-bottom: 50px !important
+
+@media(max-width: 1240px)
+  .container
+    width: 100%
+    padding-left: 15px
+    padding-right: 15px
+  section .container
+    padding-left: 15px
+    padding-right: 15px
